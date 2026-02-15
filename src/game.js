@@ -242,26 +242,7 @@ Feliz 14 de febrero, te quiero mucho, mucho de verdad, contigo quiero vivir much
       letterText.y = newY;
     });
 
-    // Botón cerrar
-    const closeButton = this.add
-      .text(panelX, panelY + panelHeight / 2 + 50, "Cerrar ❤️", {
-        fontSize: "20px",
-        backgroundColor: "#ff4d4d",
-        padding: { x: 20, y: 10 },
-      })
-      .setOrigin(0.5)
-      .setScrollFactor(0)
-      .setDepth(10001)
-      .setInteractive();
-
-    closeButton.on("pointerdown", () => {
-      darkBg.destroy();
-      panel.destroy();
-      letterText.destroy();
-      maskGraphics.destroy();
-      closeButton.destroy();
-      // Opcional: cam.startFollow(this.player);
-    });
+   
   }
 
   finalScene() {
